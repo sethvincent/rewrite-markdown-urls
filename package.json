@@ -1,6 +1,6 @@
 {
   "name": "rewrite-markdown-urls",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "turn relative github urls into urls appropriate for a static site",
   "main": "index.js",
   "scripts": {
