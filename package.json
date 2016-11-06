@@ -1,0 +1,42 @@
+{
+  "name": "rewrite-markdown-urls",
+  "version": "0.0.0",
+  "description": "turn relative github urls into urls appropriate for a static site",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --unused --no-dev && ncu",
+    "docs:api": "documentation build index.js -f md -o docs/API.md",
+    "docs:build": "npm run docs:api",
+    "lint": "standard",
+    "test:no-lint": "node tests/*.js",
+    "test": "npm run lint && npm run test:no-lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethvincent/rewrite-markdown-urls.git"
+  },
+  "keywords": [
+    "github",
+    "markdown",
+    "urls",
+    "static",
+    "sites"
+  ],
+  "author": "sethvincent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethvincent/rewrite-markdown-urls/issues"
+  },
+  "homepage": "https://github.com/sethvincent/rewrite-markdown-urls#readme",
+  "devDependencies": {
+    "documentation": "^4.0.0-beta12",
+    "folder-reader": "^1.0.1",
+    "obj-keypath": "^1.0.0",
+    "read-directory": "^2.0.0",
+    "standard": "^8.5.0",
+    "tape": "^4.6.2"
+  },
+  "dependencies": {
+    "is-relative-url": "^2.0.0"
+  }
+}
